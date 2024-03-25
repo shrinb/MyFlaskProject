@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flask App - Welcome</title>
+</head>
+<body>
+    <h1>Welcome:</h1>
+    <ul>
+        <li>
+            <form action="/1/queries/count/" method="get">  <!-- Set the route format -->
+                <label for="datetime">Enter date and time :</label>
+                <input type="text" id="datetime" name="date_prefix">  <!-- Input the Date and Time from user -->
+                <!-- On clicking submit, the datetime must be added to the route format -->
+                <input type="submit" value="Submit" onclick="this.form.action += document.getElementById('datetime').value; return true;"> 
+            </form>
+        </li>
+    </ul>
+</body>
+</html>
